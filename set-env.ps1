@@ -1,0 +1,21 @@
+param ($OPENCV_PATH = '.')
+
+$env:OPENCV_HOME = "$(Resolve-Path $OPENCV_PATH)\install\opencv"
+$env:OPENCV_DISABLE_PROBES = 'pkg_config,vcpkg_cmake,vcpkg'
+$env:OPENCV_INCLUDE_PATHS = "$env:OPENCV_HOME\include"
+$env:OPENCV_LINK_LIBS = "opencv_world490"
+$env:OPENCV_LINK_PATHS = "$env:OPENCV_HOME\x64\vc17\lib"
+
+$env:CUDA_TOOLKIT_VERSION = "v12.4"
+$env:CUDA_TOOLKIT_PATH = "$env:ProgramW6432\NVIDIA GPU Computing Toolkit\CUDA\$env:CUDA_TOOLKIT_VERSION"
+
+$env:PATH = "$env:PATH;$env:OPENCV_HOME\x64\vc17\bin"
+
+echo "OPENCV_DISABLE_PROBES=$env:OPENCV_DISABLE_PROBES"
+echo "OPENCV_HOME=$env:OPENCV_HOME"
+echo "OPENCV_INCLUDE_PATHS=$env:OPENCV_INCLUDE_PATHS"
+echo "OPENCV_LINK_LIBS=$env:OPENCV_LINK_LIBS"
+echo "OPENCV_LINK_PATHS=$env:OPENCV_LINK_PATHS"
+echo "CUDA_TOOLKIT_VERSION=$env:CUDA_TOOLKIT_VERSION"
+echo "CUDA_TOOLKIT_PATH=$env:CUDA_TOOLKIT_PATH"
+echo "PATH=$env:PATH"

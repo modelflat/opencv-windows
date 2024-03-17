@@ -1,0 +1,34 @@
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/madler/zlib.git
+	ignore = all
+
+[submodule "leptonica"]
+	path = leptonica
+	url = https://github.com/DanBloomberg/leptonica
+	ignore = all
+
+[submodule "tesseract"]
+	path = tesseract
+	url = https://github.com/tesseract-ocr/tesseract
+	ignore = all
+
+[submodule "freetype"]
+	path = freetype
+	url = https://github.com/freetype/freetype
+	ignore = all
+
+[submodule "harfbuzz"]
+	path = harfbuzz
+	url = https://github.com/harfbuzz/harfbuzz
+	ignore = all
+
+[submodule "opencv_contrib"]
+	path = opencv_contrib
+	url = https://github.com/opencv/opencv_contrib
+	ignore = all
+
+[submodule "opencv"]
+	path = opencv
+	url = https://github.com/opencv/opencv
+	ignore = all
