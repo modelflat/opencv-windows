@@ -232,7 +232,7 @@ if (-Not (Test-Path -LiteralPath "$InstallPath\opencv")) {
         -D BUILD_opencv_python_tests=OFF `
         -D BUILD_opencv_python=OFF `
         -D BUILD_opencv_python2=OFF `
-        -D BUILD_opencv_python3=OFF `
+        -D BUILD_opencv_python3=ON `
         -D BUILD_opencv_quality=OFF `
         -D BUILD_opencv_rapid=OFF `
         -D BUILD_opencv_reg=OFF `
